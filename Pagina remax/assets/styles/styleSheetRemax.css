@@ -1,0 +1,60 @@
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+}
+
+header img{
+    padding: 1.5em;
+    padding-left: 9em;
+    width: 40%;
+}
+
+.teams {
+    background-color: #dbdbdb;
+    color:#1e3054;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-box input[type=text] {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    color: #444444;
+}
+
+.btn {
+    padding: 12.5px;
+    font-weight: bold;
+}
+
+.-block {
+    width: 100%;
+}
+
+.-primary {
+    background-color: black;
+    color: white;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.-secondary {
+    background-color: white;
+    color: black;
+    border: 1px solid #000000;
+}
+
+footer {
+    background: #d51e30;
+    padding: 20px 0;
+}
+
+
+

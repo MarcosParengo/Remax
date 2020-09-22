@@ -1,3 +1,18 @@
+html {
+    scroll-behavior: smooth;
+  }
+A {
+    font-family: verdana;
+    color: white;
+    text-decoration: none;
+}
+p {
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    line-height: 0.3em;
+    font-size: 18px;
+}
 body {
     font-size: 12px;
     margin: 0;
@@ -11,8 +26,16 @@ header {
 
 header img{
     padding: 1.5em;
-    padding-left: 9em;
-    width: 40%;
+    width: 100%;
+}
+header div.hh{
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+    padding-right: 0em;
+}
+header a{
+    color:#1e3054;font-size: 13px;
 }
 
 .teams {
@@ -21,7 +44,14 @@ header img{
     text-align: center;
 }
 .teams img{
+    margin-left: 2em;
     border-radius: 100%;
+}
+.teams h2{
+    color:#1e3054;
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
 }
 article.agent {
     display: inline-block;
@@ -35,6 +65,11 @@ article.agent {
 }
 .perfil h2{
     font-size: 20px;
+    color:#FFFFFF;
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    padding:0.8em
 }
 article.perfil {
     padding-left:10em;
@@ -66,6 +101,13 @@ article.perfil {
 footer {
     background: #d51e30;
     padding: 20px 0;
+}
+footer p {
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    line-height: 0.3em;
+    font-size: 18px;
 }
 
 

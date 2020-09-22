@@ -30,16 +30,16 @@ function LoadJson(url,which){
 function fillContainerAgent(obj) {
     containerAgent.html("")
     obj.forEach(function (obj, index) {
-        containerAgent.append(`<div class="col-1-6">
+        containerAgent.append(`<div class="col-1-6" align="center">
                     <article class="agent" >
-                        <div class="col-1-1">
+                        <div class="col-1-1"  >
                             <img src="${obj.image}"
                             width="150"
                             height="150">
                         </div>
                         <div class="col-1-1">
-                            <h2 style="line-height:0.25em">${obj.name}</h2>
-                            <h2 style="line-height:0.25em">${obj.phone}</h2>
+                            <h2 style="font-size:14px;text-align: center;line-height:0.25em">${obj.name}</h2>
+                            <h2 style="font-size:14px;text-align: center;line-height:0.25em">${obj.phone}</h2>
                         </div>
                     </article>
                 </div>`)
@@ -53,10 +53,10 @@ function fillContainerValores(obj) {
                         <div class="col-1-1">
                             <img src="${obj.image}"
                             width="77"
-                            height="77" style="margin-left:2em">
+                            height="77" style="margin-left:3em">
                         </div>
                         <div class="col-1-1">
-                            <h2 style="line-height:1em">${obj.name}</h2>
+                            <h3 style="line-height:1em">${obj.name}</h2>
                         </div>
                     </article>
                 </div>`)

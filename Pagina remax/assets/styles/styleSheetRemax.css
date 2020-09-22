@@ -18,15 +18,27 @@ header img{
 .teams {
     background-color: #dbdbdb;
     color:#1e3054;
-    padding: 20px;
     text-align: center;
 }
+.teams img{
+    border-radius: 100%;
+}
+article.agent {
+    display: inline-block;
+}
 
-.search-box input[type=text] {
-    width: 100%;
-    padding: 1em;
-    font-size: 1em;
-    color: #444444;
+.perfil {
+    background-color: #1e3054;
+    color:#dbdbdb;
+    text-align: center;
+    padding-bottom: 7em;
+}
+.perfil h2{
+    font-size: 20px;
+}
+article.perfil {
+    padding-left:10em;
+    display: inline-block;
 }
 
 .btn {

@@ -1,0 +1,97 @@
+[ 
+    {
+        "name": "Ariel Baragiola",
+        "phone": "11 5413-0638",
+        "image": "assets/images/agent/1.png"
+    }
+    ,{
+        "name": "Verónica Mallie",
+        "phone": "11 4673-7591",
+        "image": "assets/images/agent/2.png"
+    }
+    ,{
+        "name": "Ulises Mastakas",
+        "phone": "11 5001-9336",
+        "image": "assets/images/agent/3.png"
+    }
+    ,{
+        "name": "Paula Martino",
+        "phone": "11 4497-0290",
+        "image": "assets/images/agent/4.png"
+    }
+    ,{
+        "name": "Monica Secilio",
+        "phone": "11 5036-3734",
+        "image": "assets/images/agent/5.png"
+    }
+    ,{
+        "name": "Facundo González",
+        "phone": "11 6477-9413",
+        "image": "assets/images/agent/6.png"
+    }
+    ,{
+        "name": "Mariela Rajmilovich",
+        "phone": "11 6307-6777",
+        "image": "assets/images/agent/7.png"
+    }
+    ,{
+        "name": "Natacha Silva",
+        "phone": "11 4090-4107",
+        "image": "assets/images/agent/8.png"
+    }
+    ,{
+        "name": "Maximiliano Berra",
+        "phone": "11 3143-9022",
+        "image": "assets/images/agent/9.png"
+    }
+    ,{
+        "name": "Mora Stochyk",
+        "phone": "11 6303-4957",
+        "image": "assets/images/agent/10.png"
+    }
+    ,{
+        "name": "Martin Forrester",
+        "phone": "11 5456-8414",
+        "image": "assets/images/agent/11.png"
+    }
+    ,{
+        "name": "Leandro Kravetz",
+        "phone": "11 6942-0264",
+        "image": "assets/images/agent/12.png"
+    }
+    ,{
+        "name": "Jacques Bendahan",
+        "phone": "11 6605-1333",
+        "image": "assets/images/agent/13.png"
+    }
+    ,{
+        "name": "Fabián Moschioni",
+        "phone": "11 5641-7410",
+        "image": "assets/images/agent/14.png"
+    }
+    ,{
+        "name": "Marina Gomez",
+        "phone": "11 5062-6917",
+        "image": "assets/images/agent/15.png"
+    }
+    ,{
+        "name": "Kena Cedeño",
+        "phone": "11 3278-4705",
+        "image": "assets/images/agent/16.png"
+    }
+    ,{
+        "name": "Nancy Bas",
+        "phone": "11 3150-0115",
+        "image": "assets/images/agent/17.png"
+    }
+    ,{
+        "name": "José Winer",
+        "phone": "Broker y Martillero",
+        "image": "assets/images/agent/18.png"
+    }
+    ,{
+        "name": "Gabriel Winer",
+        "phone": "Broker",
+        "image": "assets/images/agent/19.png"
+    }
+]

@@ -73,6 +73,67 @@ article.perfil {
     padding-left:10em;
     display: inline-block;
 }
+.porque{
+    padding-top: 0.5em;
+    background-color: #FFFFFF;
+    position: relative;
+    height: 769px;
+}
+.porque overlay{
+    position: relative;
+    display: none;
+    width: 50%;
+    height: 769px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(138, 202, 255, 1);
+    display: block;
+  }
+
+.porque text{
+    padding-left: 0.5em;
+    width: 375px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgba(40, 58, 98, 1);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+.porque text2{
+    margin: 0em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 325px;
+    font-size: 19px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-left: 3px solid #FFFFFF;
+    padding-left: 0.5em;
+}.porque imageGlobo{
+    position: relative;
+    display: none;
+    top: 3%;
+    width: 20%;
+    left: 150%;
+    right: 0;
+    bottom: 0;
+    display: block;
+} .porque imagePQ{
+    position: relative;
+    display: none;
+    top: 7%;
+    left: 97%;
+    right: 0;
+    bottom: 0;
+    display: block;
+} 
 
 .btn {
     padding: 12.5px;

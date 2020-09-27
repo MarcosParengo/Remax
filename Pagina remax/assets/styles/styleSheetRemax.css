@@ -89,10 +89,10 @@ header a{
     border-left: 3px solid #FFFFFF;
     padding-left: 0.5em;
 }
-article.perfil {
-    padding-left:10em;
+article.propuesta {
     display: inline-block;
 }
+
 footer {
     background: #d51e30;
     padding: 20px 0;

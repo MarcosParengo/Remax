@@ -32,8 +32,9 @@ function fillContainerAgent(obj) {
     obj.forEach(function (obj, index) {
         containerAgent.append(`<div class=" col-sm-12 col-md-4  col-xl-2 ">
                     <article class="agent">
-                            <img src="${obj.image}"
-                            width="100%">
+                            <a href=${obj.link}
+                            target="_blank"><img src="${obj.image}"
+                            width="100%"></a>
                             <h2 style="margin-top:1em">${obj.name}</h2>
                             <h2>${obj.phone}</h2>
                     </article>

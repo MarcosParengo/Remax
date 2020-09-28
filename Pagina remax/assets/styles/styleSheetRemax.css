@@ -1,82 +1,83 @@
 html {
     scroll-behavior: smooth;
   }
-A {
-    font-family: verdana;
-    color: white;
-    text-decoration: none;
-}
-p {
-    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    text-decoration: none;
-    line-height: 0.3em;
-    font-size: 18px;
-}
 body {
     font-size: 12px;
     margin: 0;
     font-family:  Arial, Helvetica, sans-serif;
 }
-
-header {
-    width: 100%;
-    background-color: white;
-}
-
-header img{
-    padding: 1.5em;
-    width: 100%;
-}
-header div.hh{
-    padding-top: 30%;
-    
-}
-header a{
-    color:#1e3054;font-size: 14px;
-}
-.teams {
-    background-color: #dbdbdb;
-    color:#1e3054;
-    text-align: center;
-    padding-bottom: 3em;
-}.teams img{
-    margin-left: 2em;
-    border-radius: 100%;
-}.teams h2{
-    color:#1e3054;
+body h1{
     font-size:30px;
     font-weight: bold;
     text-align: center;
-}article.agent {
-    display: inline-block;
+    padding:0.8em;
+    font-family: 'Montserrat Alternates'; 
+}
+body h2{
+    font-family: 'Montserrat Alternates'; 
+}
+body A {
+    font-family: 'Montserrat Alternates'; 
+    color: white;
+    text-decoration: none;
+}
+body p {
+    font-family: 'Montserrat Alternates';
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+img.sliderimg{
+    width:100%
+}
+span.bolder{
+    font-weight: bold;
 }
 .perfil {
     background-color: #1e3054;
     color:#dbdbdb;
     text-align: center;
-    padding-bottom: 7em;
-}.perfil h2{
-    font-size: 20px;
+    padding-bottom: 2em;
+}.perfil h1{
     color:#FFFFFF;
-    font-size:30px;
-    font-weight: bold;
-    text-align: center;
-    padding:0.8em
+    
+}.perfil h2{
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight: lighter;
+    margin-top: 1em;
+    line-height:1em
 }article.perfil {
     padding-left:10em;
     display: inline-block;
+}
+.teams {
+    background-color: #dbdbdb;
+    color:#1e3054;
+    text-align: center;
+    padding-bottom: 0em;
+}.teams img{
+    border-radius: 100%;
+}.teams h1{
+    color:#1e3054;
+}.teams h2{
+    color:#1e3054;
+    font-size:14px;
+    font-weight: bold;
+
+}article.agent {
+    display: inline-block;
+    margin-bottom: 1em;
 }
 .porque {
     background-color: #FFFFFF;
     color:#dbdbdb;
     text-align: center;
 }.porque h1{
-    margin-top: 2.5em;
+    margin-top: 1em;
     font-size: 39px;
     font-weight: bolder;
     color: rgba(40, 58, 98, 1);
-    
 }
 .porque h2{
     text-align: left;
@@ -89,20 +90,42 @@ header a{
     border-left: 3px solid #FFFFFF;
     padding-left: 0.5em;
 }
+.porque img.globo{
+    width:10%;
+    padding-top: 3em
+}
+.porque img.bottom{
+    width:100%;
+    padding-top: 3em
+}
 article.propuesta {
     display: inline-block;
 }
 
 footer {
     background: #d51e30;
-    padding: 20px 0;
 }
 footer p {
-    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     text-decoration: none;
-    line-height: 5px;
+    line-height: 1em;
     font-size: 18px;
+}
+footer img{
+    margin-bottom: 1em;
+}
+footer span.bolder{
+    font-weight: bold;
+}
+footer span.legal{
+    font-size:10px;line-height:0em
+}
+footer span.last{
+    font-weight: bold;
+    font-size: 14px;
+}
+footer div.encontranos{
+    margin-top: 2em; margin-bottom: 2em; margin-left:10em;margin-right:10em
 }
 
 

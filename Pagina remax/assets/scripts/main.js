@@ -46,19 +46,19 @@ function fillContainerAgent(obj) {
     })
 }
 function fillContainerValores(obj) {
-  containerValores.html("");
-  obj.forEach(function (obj, index) {
-    containerValores.append(`<div class="col-1-6">
+    containerValores.html("");
+    obj.forEach(function (obj, index) {
+      containerValores.append(`<div class=" col-sm-12 col-md-4  col-xl-2 ">
                     <article class="agent" >
-                        <div class="col-1-1">
+                        <div class="">
                             <img src="${obj.image}"
-                            width="77"
-                            height="77" style="margin-left:3em">
+                            width="30%"
+                            >
                         </div>
-                        <div class="col-1-1">
+                        <div class="">
                             <h3 style="line-height:1em">${obj.name}</h3>
                         </div>
                     </article>
                 </div>`);
-  });
+    });
 }

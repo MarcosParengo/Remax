@@ -46,9 +46,9 @@ function fillContainerAgent(obj) {
     })
 }
 function fillContainerValores(obj) {
-    containerValores.html("")
-    obj.forEach(function (obj, index) {
-        containerValores.append(`<div class="col-1-6">
+  containerValores.html("");
+  obj.forEach(function (obj, index) {
+    containerValores.append(`<div class="col-1-6">
                     <article class="agent" >
                         <div class="col-1-1">
                             <img src="${obj.image}"
@@ -59,6 +59,6 @@ function fillContainerValores(obj) {
                             <h3 style="line-height:1em">${obj.name}</h3>
                         </div>
                     </article>
-                </div>`)
-    })
-}zzz
+                </div>`);
+  });
+}

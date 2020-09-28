@@ -56,7 +56,7 @@ function fillContainerValores(obj) {
                             height="77" style="margin-left:3em">
                         </div>
                         <div class="col-1-1">
-                            <h3 style="line-height:1em">${obj.name}</h2>
+                            <h3 style="line-height:1em">${obj.name}</h3>
                         </div>
                     </article>
                 </div>`)

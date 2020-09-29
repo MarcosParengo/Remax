@@ -42,7 +42,7 @@ function fillContainerAgent(obj) {
     containerAgent.html("")
     contador = 0;
     obj.forEach(function (obj, index) {
-        containerAgent.append(`<div class=" col-sm-12 col-md-4  col-xl-2 ">
+        containerAgent.append(`<div class=" col-sm-12 col-md-2  col-xl-2 ">
                     <article class="agent">
                             <a href=${obj.link}
                             target="_blank"><img src="${obj.image}"
@@ -120,7 +120,7 @@ function fillContainerPropuesta(obj) {
                 </div>`);*/
         containerPropuesta.append(`
             <div class=" col-sm-12 col-md-4  col-xl-4 ">
-                <article class="agent" style="background-color: rgba(193, 27, 43, 1);border-radius: 15px 15px 15px;padding:1em">
+                <article class="agent" style="background-color: rgba(193, 27, 43, 1);border-radius: 15px 15px 15px;padding:1em;">
                     <div class="col-sm-4" style="padding:0">
                         <img src="${obj.image}" width="100%">
                     </div>

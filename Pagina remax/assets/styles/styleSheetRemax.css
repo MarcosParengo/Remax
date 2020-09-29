@@ -97,6 +97,18 @@ span.bolder{
 .porque img.bottom{
     width:100%;
     padding-top: 3em
+}.propuesta {
+    background-color: #FFFFFF;
+    text-align: center;
+}.propuesta h1{
+    font-size: 39px;
+    font-weight: bolder;
+    color: rgba(40, 58, 98, 1);
+}.propuesta h2{
+    text-align: center;
+    font-size: 19px;
+    font-weight: lighter;
+    color: #FFFFFF;
 }
 article.propuesta {
     display: inline-block;

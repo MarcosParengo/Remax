@@ -116,9 +116,52 @@ span.bolder{
 article.propuesta {
     display: inline-block;
 }
+.postulate{
+    padding-top: 2em;
+    background-color: #d51e30;;
+    color:white;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.postulate h1 {
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat Alternates'; 
+    color :white;
+    padding-bottom: 0em;
+}
+.postulate h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Montserrat Alternates'; 
+    color :white
+}
+.postulate label{
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'Montserrat Alternates'; 
+    color :white;
+}
 
 footer {
     background: #d51e30;
+}
+footer h1 {
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat Alternates'; 
+    color :white;
+    padding-bottom: 0em;
+}
+footer h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Montserrat Alternates'; 
+    color :white
 }
 footer p {
     color: white;
@@ -142,6 +185,8 @@ footer span.last{
 footer div.encontranos{
     margin-top: 2em; margin-bottom: 2em; margin-left:10em;margin-right:10em
 }
-
+footer div.form{
+    margin-top: 2em; margin-bottom: 2em; margin-left:20em;margin-right:20em
+}
 
 

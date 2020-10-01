@@ -81,25 +81,28 @@ span.bolder{
 }
 .porque h2{
     text-align: left;
-    margin-left: 20%;
-    margin-top: 10%;
-    width: 325px;
     font-size: 19px;
     font-weight: lighter;
     color: white;
     border-left: 3px solid #FFFFFF;
-    padding-left: 0.5em;
+    padding: 0.5em;
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
 }
 .porque img.globo{
-    width:10%;
-    padding-top: 3em
+    margin: auto;
+    width:40px;
+    padding-top: 3em;
+    vertical-align: middle;
 }
 .porque img.bottom{
-    width:100%;
-    padding-top: 3em
+    margin: auto;
+    
+    padding-top: 3em;
 }.propuesta {
     background-color: #FFFFFF;
-    text-align: center;
+    vertical-align: middle;
 }.propuesta h1{
     font-size: 39px;
     font-weight: bolder;

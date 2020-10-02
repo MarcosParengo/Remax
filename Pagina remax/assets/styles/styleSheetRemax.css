@@ -118,7 +118,7 @@ article.propuesta {
 }
 .postulate{
     padding-top: 2em;
-    background-color: #d51e30;;
+    background-color: #d51e30;
     color:white;
     text-align: center;
     padding-bottom: 2em;
@@ -143,8 +143,39 @@ article.propuesta {
     font-weight: lighter;
     font-family: 'Montserrat Alternates'; 
     color :white;
+    
+    padding-top: 3em;
 }
-
+.postulate input{
+    background-color: #d51e30;
+    border: none;
+    border-bottom: 2px solid red;
+    width: 300px;
+    color: white;
+}
+.postulate input.large{
+    background-color: #d51e30;
+    border: none;
+    border-bottom: 2px solid red;
+    width: 100%;
+    color: white;
+}
+.postulate input:focus {
+    outline: none;
+    color: white;
+  }
+.postulate input[type=button], input[type=submit], input[type=reset] {
+    background-color: #d51e30;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat Alternates';
+    cursor: pointer;
+}
+.postulate ::placeholder{
+    color: brown;
+}
 footer {
     background: #d51e30;
 }

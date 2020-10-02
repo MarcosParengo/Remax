@@ -111,10 +111,10 @@
         </div>
         <div class="col-sm-12 col-md-6 col-xl-6" style="padding: 0;">
           <div class="col-12">
-            <img src="assets\images\REMAX_mastrBalloon_RGB_R-01.png" class="globo" ></img>
+            <img src="assets\images\REMAX_mastrBalloon_RGB_R-01.png" class="globo"></img>
           </div>
           <div class="col-12" style="padding:0">
-            <img src="assets/images/porqueRemax.jpg" height= 468px  class="bottom"></img>
+            <img src="assets/images/porqueRemax.jpg" height=468px class="bottom"></img>
           </div>
         </div>
       </div>
@@ -149,29 +149,53 @@
     </section>
 
     <section class="postulate">
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-md-center" style="text-align: left;">
         <div class="col-12">
           <h1><span>POSTULATE</span></h1>
           <h3>Completá el formulario y nos contactaremos con vos!</h3>
         </div>
         <div>
           <form action="/action_page.php">
-            <div class=" col-sm-12 col-md-6 col-xl-6" style="margin: 0em;padding: 0em;">
-              <div>
-                <label for="fname">Nombre y Apellido*</label><br>
-                <input type="text" id="NomYApe" name="NomYApe" style="width: 100%;" required><br>
+            <div>
+              <div class=" col-sm-12 col-md-6 col-xl-6">
+                <label for="NomYApe">Nombre y Apellido*</label><br>
+                <input type="text" id="NomYApe" name="NomYApe" required><br>
+                <label for="email">Email*</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="Teléfono">Teléfono*</label><br>
+                <input type="tel" id="Teléfono" name="Teléfono" placeholder="011-XXXX-XXXX"
+                  pattern="([0-9]{3}-[0-9]{4}-[0-9]{4}|[0-9]{2}-[0-9]{4}-[0-9]{4})" required><br>
+              </div>
+              <div class=" col-sm-12 col-md-6 col-xl-6">
+                <label for="edad">Edad*</label><br>
+                <input type="number" id="edad" name="edad" required><br>
+                <label for="Residencia">Lugar de Residencia*</label><br>
+                <input type="text" id="Residencia" name="Residencia" required><br>
               </div>
             </div>
-            <div class=" col-sm-12 col-md-6 col-xl-6">
-              <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname" style="width: 400px;">
-              <input type="submit" value="Submit">
+            <div>
+              <div class=" col-sm-12 col-md-12 col-xl-12" style="padding-top: 2em;">
+                <label for="exp">¿Tenés experiencia en ventas?*</label><br>
+                <input class="large" type="text" id="exp" name="exp" required><br>
+              </div>
+              <div class=" col-sm-12 col-md-12 col-xl-12" style="padding-top: 2em;">
+                <label for="teamwork">¿Te gusta trabajar en en equipo?*</label><br>
+                <input class="large" type="text" id="teamwork" name="teamwork" required><br>
+              </div>
+              <div class=" col-sm-12 col-md-12 col-xl-12" style="padding-top: 2em;">
+                <input class="large" type="time" id="horas" name="horas" required><br>
+              </div>
+            </div>
+            <div class=" col-sm-12 col-md-12 col-xl-12" style="padding-top: 2em;">
+              <div style="text-align:center ;margin-left:1.5em">
+                <input type="submit" /><br>
+              </div>
             </div>
           </form>
         </div>
       </div>
     </section>
-    
+
     <footer>
       <div class="row" id="encontranos" style="margin:0em">
         <div class="encontranos">

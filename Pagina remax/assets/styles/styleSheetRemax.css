@@ -157,7 +157,6 @@ article.propuesta {
     background-color: #d51e30;
     border: none;
     border-bottom: 2px solid red;
-    width: 100%;
     color: white;
 }
 .postulate input:focus {
@@ -165,6 +164,7 @@ article.propuesta {
     color: white;
   }
 .postulate input[type=button], input[type=submit], input[type=reset] {
+    margin-top: 1em;
     background-color: #d51e30;
     border: none;
     color: white;

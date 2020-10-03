@@ -42,7 +42,7 @@ function fillContainerAgent(obj) {
     containerAgent.html("")
     contador = 0;
     obj.forEach(function (obj, index) {
-        containerAgent.append(`<div class=" col-sm-12 col-md-2  col-xl-2 ">
+        containerAgent.append(`<div class=" col-sm-6 col-md-2  col-xl-2 ">
                     <article class="agent">
                             <a href=${obj.link}
                             target="_blank"><img src="${obj.image}"
@@ -87,7 +87,7 @@ function fillContainerAgent(obj) {
 function fillContainerValores(obj) {
     containerValores.html("");
     obj.forEach(function (obj, index) {
-        containerValores.append(`<div class=" col-sm-12 col-md-4  col-xl-2 ">
+        containerValores.append(`<div class=" col-sm-6 col-md-4  col-xl-2 ">
                     <article class="agent" >
                             <img src="${obj.image}"
                             width="60%"

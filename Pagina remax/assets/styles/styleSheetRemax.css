@@ -154,15 +154,16 @@ article.propuesta {
 .postulate input{
     background-color: #d51e30;
     border: none;
-    border-bottom: 2px solid red;
-    width: 300px;
+    border-bottom: 2px solid white;
+    width: 100%;
     color: white;
 }
 .postulate input.large{
     background-color: #d51e30;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid white;
     color: white;
+    width: 100%;
 }
 .postulate input:focus {
     outline: none;

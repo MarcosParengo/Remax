@@ -1,3 +1,8 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -219,5 +224,3 @@ footer div.encontranos{
 footer div.form{
     margin-top: 2em; margin-bottom: 2em; margin-left:20em;margin-right:20em
 }
-
-

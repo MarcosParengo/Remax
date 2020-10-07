@@ -101,15 +101,17 @@
         "image": "assets/images/agent/17.png",
         "link": "https://www.remax.com.ar/es-ar/agentes/capital-federal/villa-crespo/nancy-bas/421041"
     },{
-        "name": "nn",
-        "phone": "nn",
-        "image": "assets/images/agent/18.jpeg",
-        "link": "#"
-    },{
-        "name": "nn",
-        "phone": "nn",
-        "image": "assets/images/agent/19.jpeg",
-        "link": "#"
+      "name": "Vanessa Juarez",
+      "phone": "11 5846-1976",
+      "image": "assets/images/agent/18.jpeg",
+      "link": "https://www.remax.com.ar/es-ar/agentes/capital-federal/villa-crespo/vanessa-juarez/42100012"
+    },
+    {
+      "name": "Vanina Safadi",
+      "phone": "11 3304-8839",
+      "image": "assets/images/agent/19.jpeg",
+      "link": "https://www.remax.com.ar/es-ar/agentes/capital-federal/villa-crespo/vanina-safadi/42100013"
+
     }
     ,{
         "name": "José Winer",

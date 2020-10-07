@@ -18,8 +18,6 @@ body h1{
     text-align: center;
     padding:0.8em;
 }
-body h2{
-}
 body A {
     color: white;
     text-decoration: none;
@@ -29,48 +27,75 @@ body p {
     text-decoration: none;
     font-size: 18px;
 }
+
+/*----------------------------------MEDIA QUERY SLIDER--------------------------------DONE*/
+
 img.sliderimg{
     width:100%
+}
+.slider-text{
+    text-align:center;
+    position:absolute;top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.5);
+    padding: 1em;
+    width: auto;
 }
 span.bolder{
     font-weight: bold;
 }
-.perfil {
-    background-color: #1e3054;
-    color:#dbdbdb;
-    text-align: center;
-    padding-bottom: 2em;
-}.perfil h1{
-    color:#FFFFFF;
-    
-}.perfil h2{
-    color:#FFFFFF;
-    font-size:18px;
-    font-weight: lighter;
-    margin-top: 1em;
-    line-height:1em
-}article.perfil {
-    padding-left:10em;
-    display: inline-block;
-}
-.teams {
-    background-color: #dbdbdb;
-    color:#1e3054;
-    text-align: center;
-    padding-bottom: 0em;
-}.teams img{
-    border-radius: 100%;
-}.teams h1{
-    color:#1e3054;
-}.teams h2{
-    color:#1e3054;
-    font-size:14px;
-    font-weight: bold;
+@media only screen and (max-width: 545px) {
+    .slider-text{
+        font-size: 15px;
+        width: 70%;
+    }
+} 
 
-}article.agent {
-    display: inline-block;
-    margin-bottom: 1em;
+/* Smaller devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 545px) {
+    .slider-text{
+        padding: 1em;
+        font-size: 18px;
+        width: 65%;
+    }   
+}   
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .slider-text{
+        padding: 1em;
+        font-size: 20px;
+        width: 65%;
+    }   
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 830px) {
+    .slider-text{
+        padding: 1em;
+        font-size: 26px;
+        width: 65%;
+    }
 }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+    .slider-text{
+        padding: 1em;
+        font-size: 25px;
+        width: auto;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .slider-text{
+        padding: 1em;
+        width: auto;
+    }
+}
+
+/*----------------------------------MEDIA QUERY PORQUE REMAX-----------------------TODO*/
+
 .porque {
     background-color: #FFFFFF;
     color:#dbdbdb;
@@ -102,7 +127,11 @@ span.bolder{
     margin: auto;
     
     padding-top: 3em;
-}.propuesta {
+}
+
+/*----------------------------------MEDIA QUERY PROPUESTA-----------------------TODO*/
+
+.propuesta {
     background-color: #FFFFFF;
     vertical-align: middle;
 }.propuesta h1{
@@ -118,6 +147,50 @@ span.bolder{
 article.propuesta {
     display: inline-block;
 }
+
+/*----------------------------------MEDIA QUERY PERFIL-----------------------TODO*/
+
+.perfil {
+    background-color: #1e3054;
+    color:#dbdbdb;
+    text-align: center;
+    padding-bottom: 2em;
+}.perfil h1{
+    color:#FFFFFF;
+    
+}.perfil h2{
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight: lighter;
+    margin-top: 1em;
+    line-height:1em
+}article.perfil {
+    padding-left:10em;
+    display: inline-block;
+}
+
+/*----------------------------------MEDIA QUERY AGENTES-----------------------TODO*/
+
+.teams {
+    background-color: #dbdbdb;
+    color:#1e3054;
+    text-align: center;
+    padding-bottom: 0em;
+}.teams img{
+    border-radius: 100%;
+}.teams h1{
+    color:#1e3054;
+}.teams h2{
+    color:#1e3054;
+    font-size:14px;
+    font-weight: bold;
+}article.agent {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+/*----------------------------------MEDIA QUERY FORMULARIO-----------------------TODO*/
+
 .postulate{
     padding-top: 2em;
     background-color: #d51e30;

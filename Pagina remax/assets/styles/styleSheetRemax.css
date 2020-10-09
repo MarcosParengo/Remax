@@ -247,25 +247,53 @@ span.bolder{
     }
 }
 
-/*----------------------------------MEDIA QUERY PROPUESTA-----------------------TODO*/
+/*----------------------------------MEDIA QUERY PROPUESTA-----------------------DONE*/
 
 .propuesta {
     background-color: #FFFFFF;
     vertical-align: middle;
+    margin-bottom: 3em;
 }.propuesta h1{
     font-size: 39px;
     font-weight: bolder;
     color: rgba(40, 58, 98, 1);
 }.propuesta h2{
-    text-align: center;
+    text-align: left;
     font-size: 19px;
     font-weight: lighter;
     color: #FFFFFF;
+    vertical-align: middle;
 }
-article.propuesta {
-    display: inline-block;
+.block{
+    background-color: rgba(193, 27, 43, 1);
+    border-radius: 15px 15px 15px;
+    padding:1em;
+    margin:1em
 }
-
+@media only screen and (max-width: 768px) {
+    .propuesta h2{
+        text-align: left;
+        font-size: 25px;
+    }  
+} 
+@media only screen and (min-width: 768px) {
+      
+}  
+@media only screen and (min-width: 830px) {
+    .propuesta h2{
+        text-align: left;
+        font-size: 17px;
+    }  
+}
+@media only screen and (min-width: 992px) { 
+    .propuesta h2{
+        text-align: left;
+        font-size: 17px;
+    } 
+} 
+@media only screen and (min-width: 1200px) {
+    
+}
 /*----------------------------------MEDIA QUERY PERFIL-----------------------TODO*/
 
 .perfil {
@@ -286,7 +314,25 @@ article.propuesta {
     padding-left:10em;
     display: inline-block;
 }
+@media only screen and (max-width: 545px) {
+    
+} 
 
+@media only screen and (min-width: 545px) {
+   
+}   
+@media only screen and (min-width: 600px) {
+      
+}  
+@media only screen and (min-width: 830px) {
+    
+}
+@media only screen and (min-width: 992px) { 
+    
+} 
+@media only screen and (min-width: 1200px) {
+    
+}
 /*----------------------------------MEDIA QUERY AGENTES-----------------------TODO*/
 
 .teams {

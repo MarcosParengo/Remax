@@ -4,7 +4,9 @@ var containerValores
 var contador = 0;
 var aver;
 
+
 $(document).ready(function () {
+    var mediaqueryList = window.matchMedia("(max-width: 992px)");
     containerAgent = $("#containerAgent")
     var team = "assets/data/agent.json"
     containerValores = $("#containerValores")
@@ -13,9 +15,26 @@ $(document).ready(function () {
     var propuesta = "assets/data/propuesta.json"
     LoadJson(team, 1)
     LoadJson(perfil, 2)
-    LoadJson(propuesta, 3)
+    
+    if(mediaqueryList.matches) {
+        LoadJson(propuesta, 3, 1)
+        console.log("menos de 992")
+      }else{
+        LoadJson(propuesta, 3, 0)
+        console.log("mas de 992") 
+      }
+    
+    mediaqueryList.addListener( function(EventoMediaQueryList) {
+        if(mediaqueryList.matches) {
+            LoadJson(propuesta, 3,1)
+            console.log("se fue a menos de 992")
+        }else{
+            LoadJson(propuesta, 3,0)
+            console.log("se pasa de 992")
+        }
+});
 })
-function LoadJson(url, which) {
+function LoadJson(url, which,MQ) {
     $.ajax({
         method: "get",
         url: url,
@@ -30,7 +49,7 @@ function LoadJson(url, which) {
                 fillContainerValores(obj);
                 break
             case 3:
-                fillContainerPropuesta(obj);
+                fillContainerPropuesta(obj,MQ);
                 break
         }
     })
@@ -98,42 +117,43 @@ function fillContainerValores(obj) {
                 </div>`);
     });
 }
-function fillContainerPropuesta(obj) {
+function fillContainerPropuesta(obj,MQ) {
     contador = 0;
-
+    if(MQ==0){containerPropuesta.html("");
     obj.forEach(function (obj, index) {
-        /*containerPropuesta.append(`<div class=" col-sm-12 col-md-4  col-xl-4 ">
-        <div style="background-color: rgba(193, 27, 43, 1);border-radius: 15px 15px 15px;padding:2em;">
-                    <article class="agent">
-                        <div class="row align-items-center">
-                            <div class="col-3" style="padding:0em">
-                                    <img src="${obj.image}"
-                                    width="100%">
-                                </div>
-                                <div class="col-9" style="padding:0em">
-                                    <h2>${obj.name}</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    </div>
-                </div>`);*/
         containerPropuesta.append(`
-            <div class=" col-sm-12 col-md-4  col-xl-4 ">
-                <article class="agent" style="background-color: rgba(193, 27, 43, 1);border-radius: 15px 15px 15px;padding:1em;">
-                    <div class="col-sm-4" style="padding:0">
-                        <img src="${obj.image}" width="100%">
+        <div class="col-sm-12 col-md-4 col-xl-4">
+           <div class="block">
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <img src="${obj.image}" class="img-fluid" alt="Responsive image">
                     </div>
-                    <div class="col-sm-8" style="padding:0">
+                    <div class="col-8 col-sm-8">
                         <h2>${obj.name}</h2>
                     </div>
-                </article>
-            </div>
-                `)
-        contador++
-
-        if (contador == 5) {
-            containerPropuesta.append(`<div class="w-100"></div>`)
-        }
-    });
+                </div>
+           </div>
+        </div>`)
+    contador++
+    if (contador == 5) {
+        containerPropuesta.append(`<div class="w-100"></div>`)
+        contador=0;
+    }
+        
+    });}else{containerPropuesta.html("");
+    obj.forEach(function (obj, index) {
+        containerPropuesta.append(`
+        <div class="col-sm-12 col-md-6 col-xl-6">
+           <div class="block">
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <img src="${obj.image}" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col-8 col-sm-8">
+                        <h2>${obj.name}</h2>
+                    </div>
+                </div>
+           </div>
+        </div>`)
+    });}
 }

@@ -27,6 +27,35 @@ body p {
     text-decoration: none;
     font-size: 18px;
 }
+/*----------------------------------MEDIA QUERY HEADER -------------------------------DONE*/
+
+@media only screen and (min-width: 545px) {
+     
+}   
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .navbar-brand{
+        margin-left: 0em;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 990px) {
+    .navbar-brand{
+        margin-left: 3em;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1050px) { 
+    .navbar-brand{
+        margin-left: 5em;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar-brand{
+        margin-left: 7em;
+    }
+}
 
 /*----------------------------------MEDIA QUERY SLIDER--------------------------------DONE*/
 
@@ -94,7 +123,7 @@ span.bolder{
     }
 }
 
-/*----------------------------------MEDIA QUERY PORQUE REMAX-----------------------TODO*/
+/*----------------------------------MEDIA QUERY PORQUE REMAX-----------------------DONE*/
 
 .porque {
     background-color: #FFFFFF;
@@ -114,8 +143,12 @@ span.bolder{
     border-left: 3px solid #FFFFFF;
     padding: 0.5em;
     margin-top: 2em;
-    margin-left: 7em;
-    margin-right: 7em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.porque img.imgPq{
+    width: 200px;
+    padding-left: 0.5em;
 }
 .porque img.globo{
     margin: auto;
@@ -124,9 +157,94 @@ span.bolder{
     vertical-align: middle;
 }
 .porque img.bottom{
-    margin: auto;
-    
-    padding-top: 3em;
+    vertical-align: middle;
+    margin-top: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .porque img.bottom{
+        display: none;
+    }
+    .porque img.globo{
+        display: none;
+    }
+    .porque h1{
+        font-size: 30px;
+    }
+    .porque img.imgPq{
+    width: 150px;
+    }
+}      
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 767px) {
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 45%;
+    }
+    .porque h1{
+        font-size: 30px;
+    }
+    .porque img.imgPq{
+    width: 150px;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 840px) {
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-right :3em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 45%;
+    }
+    .porque h1{
+        font-size: 30px;
+    }
+    .porque img.imgPq{
+    width: 150px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 30%;
+    }
+    .porque h1{
+    font-size: 35px;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .porque h2{
+        text-align: left;
+        color: white;
+        border-left: 3px solid #FFFFFF;
+        margin-top: 2em;
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 10%;
+    }
 }
 
 /*----------------------------------MEDIA QUERY PROPUESTA-----------------------TODO*/

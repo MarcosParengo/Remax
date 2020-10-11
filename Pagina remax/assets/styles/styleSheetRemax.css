@@ -297,7 +297,7 @@ span.bolder{
 @media only screen and (min-width: 1200px) {
     
 }
-/*----------------------------------MEDIA QUERY PERFIL-----------------------TODO*/
+/*----------------------------------MEDIA QUERY PERFIL-----------------------DONE*/
 
 .perfil {
     background-color: #1e3054;
@@ -332,6 +332,7 @@ article.perfil {
     padding-bottom: 0em;
 }.teams img{
     border-radius: 100%;
+    width: 100%;
 }.teams h1{
     color:#1e3054;
 }.teams h2{
@@ -342,25 +343,11 @@ article.perfil {
     display: inline-block;
     margin-bottom: 1em;
 }
-@media only screen and (max-width: 545px) {
-    
+@media only screen and (max-width: 575px) {
+    .teams img{
+        width: 70%;
+    } 
 } 
-
-@media only screen and (min-width: 545px) {
-   
-}   
-@media only screen and (min-width: 600px) {
-      
-}  
-@media only screen and (min-width: 830px) {
-    
-}
-@media only screen and (min-width: 992px) { 
-    
-} 
-@media only screen and (min-width: 1200px) {
-    
-}
 /*----------------------------------MEDIA QUERY FORMULARIO-----------------------TODO*/
 
 .postulate{

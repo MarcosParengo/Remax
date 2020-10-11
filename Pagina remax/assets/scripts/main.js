@@ -106,10 +106,9 @@ function fillContainerAgent(obj) {
 function fillContainerValores(obj) {
     containerValores.html("");
     obj.forEach(function (obj, index) {
-        containerValores.append(`<div class=" col-sm-6 col-md-4  col-xl-2 ">
+        containerValores.append(`<div class=" col-xs-2 col-sm-4 col-md-3  col-xl-2 ">
                     <article class="agent" >
-                            <img src="${obj.image}"
-                            width="60%"
+                        <img src="${obj.image}"
                         <div>
                             <h2>${obj.name}</h2>
                         </div>

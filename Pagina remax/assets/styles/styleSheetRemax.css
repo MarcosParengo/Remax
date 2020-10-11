@@ -275,6 +275,9 @@ span.bolder{
         text-align: left;
         font-size: 25px;
     }  
+    .propuesta img{
+        padding:1.5em
+    }
 } 
 @media only screen and (min-width: 768px) {
       
@@ -310,9 +313,34 @@ span.bolder{
     font-weight: lighter;
     margin-top: 1em;
     line-height:1em
-}article.perfil {
+}.perfil img{
+    width:60%
+}
+article.perfil {
     padding-left:10em;
     display: inline-block;
+}
+@media only screen and (max-width: 575px) {
+   .perfil img{width: 30%;} 
+} 
+/*----------------------------------MEDIA QUERY AGENTES-----------------------TODO*/
+
+.teams {
+    background-color: #dbdbdb;
+    color:#1e3054;
+    text-align: center;
+    padding-bottom: 0em;
+}.teams img{
+    border-radius: 100%;
+}.teams h1{
+    color:#1e3054;
+}.teams h2{
+    color:#1e3054;
+    font-size:14px;
+    font-weight: bold;
+}article.agent {
+    display: inline-block;
+    margin-bottom: 1em;
 }
 @media only screen and (max-width: 545px) {
     
@@ -333,26 +361,6 @@ span.bolder{
 @media only screen and (min-width: 1200px) {
     
 }
-/*----------------------------------MEDIA QUERY AGENTES-----------------------TODO*/
-
-.teams {
-    background-color: #dbdbdb;
-    color:#1e3054;
-    text-align: center;
-    padding-bottom: 0em;
-}.teams img{
-    border-radius: 100%;
-}.teams h1{
-    color:#1e3054;
-}.teams h2{
-    color:#1e3054;
-    font-size:14px;
-    font-weight: bold;
-}article.agent {
-    display: inline-block;
-    margin-bottom: 1em;
-}
-
 /*----------------------------------MEDIA QUERY FORMULARIO-----------------------TODO*/
 
 .postulate{

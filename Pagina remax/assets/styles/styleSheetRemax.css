@@ -294,9 +294,6 @@ span.bolder{
         font-size: 17px;
     } 
 } 
-@media only screen and (min-width: 1200px) {
-    
-}
 /*----------------------------------MEDIA QUERY PERFIL-----------------------DONE*/
 
 .perfil {
@@ -345,10 +342,10 @@ article.perfil {
 }
 @media only screen and (max-width: 575px) {
     .teams img{
-        width: 70%;
+        width: 60%;
     } 
 } 
-/*----------------------------------MEDIA QUERY FORMULARIO-----------------------TODO*/
+/*----------------------------------MEDIA QUERY FORMULARIO-----------------------DONE*/
 
 .postulate{
     padding-top: 2em;
@@ -407,6 +404,8 @@ article.perfil {
 .postulate ::placeholder{
     color: brown;
 }
+/*----------------------------------MEDIA QUERY FOOTER-----------------------TODO*/
+
 footer {
     background: #d51e30;
 }
@@ -445,6 +444,24 @@ footer span.last{
 footer div.encontranos{
     margin-top: 0em; margin-bottom: 0em; margin-left:10em;margin-right:10em
 }
-footer div.form{
-    margin-top: 2em; margin-bottom: 2em; margin-left:20em;margin-right:20em
+footer .footerP{
+    margin-right: 10em
+}
+@media only screen and (max-width: 765px) {
+    footer div.encontranos{
+        margin-left:0em;margin-right:0em
+    }
+    footer .footerP{
+        margin-right: 0em
+    }
+} 
+@media only screen and (min-width: 768px) {
+    footer .footerP{
+        margin-right: 0em
+    }
+}  
+@media only screen and (min-width: 830px) {
+    footer .footerP{
+        margin-right: 0em
+    }
 }

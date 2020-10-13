@@ -131,7 +131,6 @@ span.bolder{
     text-align: center;
 }.porque h1{
     margin-top: 1em;
-    font-size: 39px;
     font-weight: bolder;
     color: rgba(40, 58, 98, 1);
 }
@@ -141,14 +140,13 @@ span.bolder{
     font-weight: lighter;
     color: white;
     border-left: 3px solid #FFFFFF;
-    padding: 0.5em;
+    padding-left: 0.5em;
     margin-top: 2em;
     margin-left: 1em;
     margin-right: 1em;
 }
 .porque img.imgPq{
-    width: 200px;
-    padding-left: 0.5em;
+    width: 190px;
 }
 .porque img.globo{
     margin: auto;
@@ -177,7 +175,7 @@ span.bolder{
         font-size: 30px;
     }
     .porque img.imgPq{
-    width: 150px;
+        width: 150px;
     }
 }      
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -196,6 +194,7 @@ span.bolder{
     }
     .porque img.imgPq{
     width: 150px;
+    margin:auto
     }
 }  
 /* Medium devices (landscape tablets, 768px and up) */
@@ -206,11 +205,10 @@ span.bolder{
         margin-right :3em;
     }
     .porque img.bottom{
-        vertical-align: middle;
         margin-top: 45%;
     }
     .porque h1{
-        font-size: 30px;
+        font-size: 33px;
     }
     .porque img.imgPq{
     width: 150px;
@@ -224,12 +222,14 @@ span.bolder{
         margin-right: 5em;
     }
     .porque img.bottom{
-        vertical-align: middle;
         margin-top: 30%;
     }
     .porque h1{
-    font-size: 35px;
+    font-size: 33px;
     }
+    .porque img.imgPq{
+        width: 190px;
+        }
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -242,8 +242,10 @@ span.bolder{
         margin-right: 7em;
     }
     .porque img.bottom{
-        vertical-align: middle;
         margin-top: 10%;
+    }
+    .porque img.imgPq{
+        width: 190px;
     }
 }
 
@@ -265,7 +267,7 @@ span.bolder{
     vertical-align: middle;
 }
 .block{
-    background-color: rgba(193, 27, 43, 1);
+    background-color: #d51e30;
     border-radius: 15px 15px 15px;
     padding:1em;
     margin:1em

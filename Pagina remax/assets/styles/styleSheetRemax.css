@@ -165,6 +165,12 @@ span.bolder{
     .porque img.imgPq{
         width: 120px;
     }
+    .porque img.bottom{
+        display: none;
+    }
+    .porque img.globo{
+        display: none;
+    }
 } 
 @media only screen and (min-width: 410px) {
     .porque h2{
@@ -278,7 +284,10 @@ span.bolder{
     background-color: #FFFFFF;
     vertical-align: middle;
     margin-bottom: 3em;
-}.propuesta h1{
+}.propuesta .Pqprop{
+    width: 300px;
+}
+.propuesta h1{
     font-size: 39px;
     font-weight: bolder;
     color: rgba(40, 58, 98, 1);
@@ -295,13 +304,25 @@ span.bolder{
     padding:1em;
     margin:1em
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 415px) {
+    .propuesta h2{
+        text-align: left;
+        font-size: 15px;
+    }
+    .propuesta h1{
+        font-size: 30px;
+    }
+    .propuesta .Pqprop{
+        width: 200px;
+    }
+} 
+@media only screen and (min-width: 415px) {
     .propuesta h2{
         text-align: left;
         font-size: 25px;
     }  
 } 
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 768px) {
     .propuesta h2{
         text-align: left;
         font-size: 17px;

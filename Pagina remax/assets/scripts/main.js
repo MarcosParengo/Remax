@@ -119,7 +119,7 @@ function fillContainerValores(obj) {
     containerValores.html("");
     obj.forEach(function (obj, index) {
         containerValores.append(`<div class=" col-xs-2 col-sm-4 col-md-3  col-xl-2 ">
-                    <article class="agent" >
+                    <article class="perfil" >
                         <img src="${obj.image}"
                         <div>
                             <h2>${obj.name}</h2>

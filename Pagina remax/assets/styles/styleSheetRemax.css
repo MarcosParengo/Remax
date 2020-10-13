@@ -343,6 +343,7 @@ span.bolder{
     padding-bottom: 2em;
 }.perfil h1{
     color:#FFFFFF;
+    font-weight: lighter ;
     
 }.perfil h2{
     color:#FFFFFF;
@@ -354,8 +355,9 @@ span.bolder{
     width:60%
 }
 article.perfil {
-    padding-left:10em;
     display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 @media only screen and (max-width: 575px) {
    .perfil img{width: 30%;} 

@@ -28,10 +28,7 @@ body p {
     font-size: 18px;
 }
 /*----------------------------------MEDIA QUERY HEADER -------------------------------DONE*/
-
-@media only screen and (min-width: 545px) {
-     
-}   
+   
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .navbar-brand{
@@ -152,14 +149,24 @@ span.bolder{
     margin: auto;
     width:40px;
     padding-top: 3em;
+    display: flex;
     vertical-align: middle;
 }
 .porque img.bottom{
+    display: flex;
     vertical-align: middle;
     margin-top: 25%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 410px) {
+    .porque h1{
+        font-size: 25px;
+    }
+    .porque img.imgPq{
+        width: 120px;
+    }
+} 
+@media only screen and (min-width: 410px) {
     .porque h2{
         margin-top: 2em;
         margin-left: 2em;
@@ -188,6 +195,10 @@ span.bolder{
     .porque img.bottom{
         vertical-align: middle;
         margin-top: 45%;
+        display: flex;
+    }
+    .porque img.globo{
+        display: flex;
     }
     .porque h1{
         font-size: 30px;
@@ -206,6 +217,10 @@ span.bolder{
     }
     .porque img.bottom{
         margin-top: 45%;
+        display: flex;
+    }
+    .porque img.globo{
+        display: flex;
     }
     .porque h1{
         font-size: 33px;
@@ -223,13 +238,17 @@ span.bolder{
     }
     .porque img.bottom{
         margin-top: 30%;
+        display: flex;
+    }
+    .porque img.globo{
+        display: flex;
     }
     .porque h1{
     font-size: 33px;
     }
     .porque img.imgPq{
         width: 190px;
-        }
+    }
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -243,9 +262,13 @@ span.bolder{
     }
     .porque img.bottom{
         margin-top: 10%;
+        display: flex;
     }
     .porque img.imgPq{
-        width: 190px;
+        width: 190px;   
+    }
+    .porque img.globo{
+        display: flex;
     }
 }
 
@@ -277,13 +300,7 @@ span.bolder{
         text-align: left;
         font-size: 25px;
     }  
-    .propuesta img{
-        padding:1.5em
-    }
 } 
-@media only screen and (min-width: 768px) {
-      
-}  
 @media only screen and (min-width: 830px) {
     .propuesta h2{
         text-align: left;

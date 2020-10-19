@@ -153,6 +153,7 @@ span.bolder{
     vertical-align: middle;
 }
 .porque img.bottom{
+    margin: auto;
     display: flex;
     vertical-align: middle;
     margin-top: 25%;
@@ -269,6 +270,26 @@ span.bolder{
     .porque img.bottom{
         margin-top: 10%;
         display: flex;
+    }
+    .porque img.imgPq{
+        width: 190px;   
+    }
+    .porque img.globo{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .porque h2{
+        text-align: left;
+        color: white;
+        border-left: 3px solid #FFFFFF;
+        margin-top: 2em;
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    .porque img.bottom{
+        margin-top: 3%;
+        width: 400px;
     }
     .porque img.imgPq{
         width: 190px;   

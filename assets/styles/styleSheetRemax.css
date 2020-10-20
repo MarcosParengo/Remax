@@ -84,9 +84,9 @@ img.sliderimg {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    margin: auto;
+    color: white;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1em;
     width: auto;
@@ -154,6 +154,7 @@ span.bolder {
     .slider-text {
         padding: 1em;
         width: auto;
+        font-size: 30px;
     }
 }
 
@@ -429,8 +430,8 @@ span.bolder {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: lighter;
-    margin-top: 1em;
-    line-height: 1em
+    margin-top: 0em;
+    line-height: 1.5em
 }
 
 .perfil img {
@@ -472,6 +473,10 @@ article.perfil {
     color: #1e3054;
     font-size: 14px;
     font-weight: bold;
+}
+
+.teams h2.phone {
+    font-weight: lighter;
 }
 
 article.agent {
@@ -590,6 +595,7 @@ footer img {
 
 footer span.bolder {
     font-weight: bold;
+    line-height: 2em;
 }
 
 footer span.legal {

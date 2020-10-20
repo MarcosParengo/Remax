@@ -8,9 +8,9 @@ Por que remax:
     tamaño de Imagen✓
 Propuesta:
     Sombra en rectangulos✓
-    mantener relacion texto tamaño del original
+    mantener relacion texto tamaño del original✓
 Perfil del agente
-    +Line height
+    +Line height✓
 Nuetro equipo:
     -
 Encontranos:

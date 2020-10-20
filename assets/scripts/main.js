@@ -146,7 +146,7 @@ function fillContainerAgent(obj, MQ) {
                                 target="_blank"><img src="${obj.image}"
                                 width="100%"></a>
                                 <h2 style="margin-top:1em">${obj.name}</h2>
-                                <h2>${obj.phone}</h2>
+                                <h2 class="phone">${obj.phone}</h2>
                         </article>
                     </div>`)
             contador++

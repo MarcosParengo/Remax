@@ -5,7 +5,7 @@ var contador = 0;
 var aver;
 
 
-$(document).ready(function () {
+$(document).ready(function() {
     var mediaqueryList = window.matchMedia("(max-width: 992px)");
     var mediaqueryListAgent = window.matchMedia("(max-width: 1200px)");
 
@@ -16,70 +16,72 @@ $(document).ready(function () {
     containerPropuesta = $("#containerPropuesta")
     var propuesta = "assets/data/propuesta.json"
     LoadJson(perfil, 2)
-    
-    if(mediaqueryList.matches) {//Primer carga segun el tamano (Propuesta)
+
+    if (mediaqueryList.matches) { //Primer carga segun el tamano (Propuesta)
         LoadJson(propuesta, 3, 1)
         console.log("menos de 992")
-    }else{
+    } else {
         LoadJson(propuesta, 3, 0)
-        console.log("mas de 992") 
+        console.log("mas de 992")
     }
-    if(mediaqueryListAgent.matches) {//Primer carga segun el tamano (Agentes)
-        LoadJson(team, 1,1)
+    if (mediaqueryListAgent.matches) { //Primer carga segun el tamano (Agentes)
+        LoadJson(team, 1, 1)
         console.log("menos de 1200")
-    }else{
-        LoadJson(team, 1,0)
-        console.log("mas de 1200") 
+    } else {
+        LoadJson(team, 1, 0)
+        console.log("mas de 1200")
     }
-    
-    mediaqueryList.addListener( function(EventoMediaQueryList) {//cambio de la construccion segun los cambios del tamano(Propuesta)
-        if(mediaqueryList.matches) {
-            LoadJson(propuesta, 3,1)
+
+    mediaqueryList.addListener(function(EventoMediaQueryList) { //cambio de la construccion segun los cambios del tamano(Propuesta)
+        if (mediaqueryList.matches) {
+            LoadJson(propuesta, 3, 1)
             console.log("se fue a menos de 992")
-        }else{
-            LoadJson(propuesta, 3,0)
+        } else {
+            LoadJson(propuesta, 3, 0)
             console.log("se pasa de 992")
         }
-    }); 
-    mediaqueryListAgent.addListener( function(EventoMediaQueryList) {
-        if(mediaqueryListAgent.matches) {
-            LoadJson(team, 1,1)
+    });
+    mediaqueryListAgent.addListener(function(EventoMediaQueryList) {
+        if (mediaqueryListAgent.matches) {
+            LoadJson(team, 1, 1)
             console.log("se fue a menos de 1200")
-        }else{
-            LoadJson(team, 1,0)
+        } else {
+            LoadJson(team, 1, 0)
             console.log("se pasa de 1200")
         }
-    }); 
+    });
 })
 
-function LoadJson(url, which,MQ) {
+function LoadJson(url, which, MQ) {
     $.ajax({
-        method: "get",
-        url: url,
-        dataType: "json"
-    }).done(function (data) {
-        obj = data
-        switch (which) {
-            case 1:
-                fillContainerAgent(obj,MQ);
-                break
-            case 2:
-                fillContainerValores(obj);
-                break
-            case 3:
-                fillContainerPropuesta(obj,MQ);
-                break
-        }
-    })
-        .fail(function (error) {
+            method: "get",
+            url: url,
+            dataType: "json"
+        }).done(function(data) {
+            obj = data
+            switch (which) {
+                case 1:
+                    fillContainerAgent(obj, MQ);
+                    break
+                case 2:
+                    fillContainerValores(obj);
+                    break
+                case 3:
+                    fillContainerPropuesta(obj, MQ);
+                    break
+            }
+        })
+        .fail(function(error) {
             console.log(error)
         })
 }
-function fillContainerPropuesta(obj,MQ) {
+
+function fillContainerPropuesta(obj, MQ) {
     contador = 0;
-    if(MQ==0){containerPropuesta.html("");
-    obj.forEach(function (obj, index) {
-        containerPropuesta.append(`
+    if (MQ == 0) {
+        containerPropuesta.html("");
+        obj.forEach(function(obj, index) {
+            containerPropuesta.append(`
         <div class="col-sm-12 col-md-4 col-xl-4">
            <div class="block">
                 <div class="row">
@@ -92,15 +94,17 @@ function fillContainerPropuesta(obj,MQ) {
                 </div>
            </div>
         </div>`)
-    contador++
-    if (contador == 5) {
-        containerPropuesta.append(`<div class="w-100"></div>`)
-        contador=0;
-    }
-        
-    });}else{containerPropuesta.html("");
-    obj.forEach(function (obj, index) {
-        containerPropuesta.append(`
+            contador++
+            if (contador == 5) {
+                containerPropuesta.append(`<div class="w-100"></div>`)
+                contador = 0;
+            }
+
+        });
+    } else {
+        containerPropuesta.html("");
+        obj.forEach(function(obj, index) {
+            containerPropuesta.append(`
         <div class="col-sm-12 col-md-6 col-xl-6">
            <div class="block">
                 <div class="row">
@@ -113,11 +117,13 @@ function fillContainerPropuesta(obj,MQ) {
                 </div>
            </div>
         </div>`)
-    });}
+        });
+    }
 }
+
 function fillContainerValores(obj) {
     containerValores.html("");
-    obj.forEach(function (obj, index) {
+    obj.forEach(function(obj, index) {
         containerValores.append(`<div class=" col-xs-2 col-sm-4 col-md-3  col-xl-2 ">
                     <article class="perfil" >
                         <img src="${obj.image}"
@@ -128,11 +134,12 @@ function fillContainerValores(obj) {
                 </div>`);
     });
 }
-function fillContainerAgent(obj,MQ) {
+
+function fillContainerAgent(obj, MQ) {
     containerAgent.html("")
     contador = 0;
-    if(MQ==0){//Mayor a 1200, construccion compleja
-        obj.forEach(function (obj, index) {
+    if (MQ == 0) { //Mayor a 1200, construccion compleja
+        obj.forEach(function(obj, index) {
             containerAgent.append(`<div class=" col-sm-6 col-md-4  col-xl-2 ">
                         <article class="agent">
                                 <a href=${obj.link}
@@ -172,9 +179,9 @@ function fillContainerAgent(obj,MQ) {
                 contador=0
             }*/
         })
-    }  else{//menor a 1200, construccion simple
+    } else { //menor a 1200, construccion simple
         console.log("construccion simple")
-        obj.forEach(function (obj, index) {
+        obj.forEach(function(obj, index) {
             containerAgent.append(`<div class=" col-sm-4 col-md-3  col-xl-2 ">
                         <article class="agent">
                                 <a href=${obj.link}
@@ -187,4 +194,3 @@ function fillContainerAgent(obj,MQ) {
         })
     }
 }
-

@@ -1,0 +1,17 @@
+Header: 
+    Items con margen
+    Imagen con mismas dimensiones?
+Por que remax:
+    Alinear texto de la izquierda
+    tamaño,renglones e interlineado del textomismo tamaño de seccion
+    mismo tamaño de seccion
+    tamaño de Imagen
+Propuesta:
+    Sombra en rectangulos
+    mantener relacion texto tamaño del originarl
+Perfil del agente
+    +Line height
+Nuetro equipo:
+    -
+Encontranos:
+    Caba en otro renglon

@@ -321,9 +321,10 @@ span.bolder{
 }
 .block{
     background-color: #d51e30;
-    border-radius: 15px 15px 15px;
+    border-radius: 5px 5px 5px;
     padding:1em;
-    margin:1em
+    margin:30px;
+    
 }
 @media only screen and (max-width: 415px) {
     .propuesta h2{

@@ -168,20 +168,20 @@ span.bolder {
 
 .porque h1 {
     margin-top: 1em;
+    padding-bottom: 0em;
     font-weight: bolder;
     color: rgba(40, 58, 98, 1);
 }
 
 .porque h2 {
     text-align: left;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: lighter;
     color: white;
     border-left: 3px solid #FFFFFF;
     padding-left: 0.5em;
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-top: 3em;
+    line-height: 23.8px;
 }
 
 .porque img.imgPq {
@@ -221,8 +221,6 @@ span.bolder {
 @media only screen and (min-width: 410px) {
     .porque h2 {
         margin-top: 2em;
-        margin-left: 2em;
-        margin-right: 2em;
     }
     .porque img.bottom {
         display: none;
@@ -244,8 +242,6 @@ span.bolder {
 @media only screen and (min-width: 767px) {
     .porque h2 {
         margin-top: 2em;
-        margin-left: 1em;
-        margin-right: 1em;
     }
     .porque img.bottom {
         vertical-align: middle;
@@ -270,8 +266,6 @@ span.bolder {
 @media only screen and (min-width: 840px) {
     .porque h2 {
         margin-top: 2em;
-        margin-left: 3em;
-        margin-right: 3em;
     }
     .porque img.bottom {
         margin-top: 45%;
@@ -294,8 +288,6 @@ span.bolder {
 @media only screen and (min-width: 992px) {
     .porque h2 {
         margin-top: 2em;
-        margin-left: 5em;
-        margin-right: 5em;
     }
     .porque img.bottom {
         margin-top: 30%;
@@ -317,12 +309,7 @@ span.bolder {
 
 @media only screen and (min-width: 1200px) {
     .porque h2 {
-        text-align: left;
-        color: white;
-        border-left: 3px solid #FFFFFF;
-        margin-top: 2em;
-        margin-left: 7em;
-        margin-right: 7em;
+        margin-top: 3em;
     }
     .porque img.bottom {
         margin-top: 10%;
@@ -338,12 +325,7 @@ span.bolder {
 
 @media only screen and (min-width: 1400px) {
     .porque h2 {
-        text-align: left;
-        color: white;
-        border-left: 3px solid #FFFFFF;
         margin-top: 2em;
-        margin-left: 7em;
-        margin-right: 7em;
     }
     .porque img.bottom {
         margin-top: 3%;
